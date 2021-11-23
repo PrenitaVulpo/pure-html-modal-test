@@ -53,3 +53,12 @@ a {
   font-size: 21px;
   font-weight: 600;
 }
+
+.modalclose {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  color: #585858;
+  text-decoration: none;
+  font-size: 36px;
+}
