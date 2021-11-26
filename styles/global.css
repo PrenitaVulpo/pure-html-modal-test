@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .modal-container.show-modal {
   display: flex;
 }
@@ -26,6 +27,21 @@ body {
   border: 10px solid #908b7a;
   box-shadow: 0 0 0 10px white;
   position: relative;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+.show-modal .modal {
+  animation: modal 0.3s;
 }
 
 .modal-close-button {

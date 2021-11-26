@@ -8,11 +8,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="series-modal" class="modal-container">
+    <button onclick="callModal()">Call modal</button>
+    <div id="series-modal" class="modal-container" onclick="hideModal()">
       <div class="modal">
-        <button class="modal-close-button">X</button>
+        <button class="modal-close-button" onclick="hideModal()">X</button>
         <h1>Modal</h1>
       </div>
     </div>
   </body>
 </html>
+<script src="./index.js"></script>
